@@ -1,5 +1,5 @@
 
-Demo : http://35.89.88.171:3000/
+Demo : https://pravinl.netlify.app/
 ```shell
 nvm install
 nvm use
