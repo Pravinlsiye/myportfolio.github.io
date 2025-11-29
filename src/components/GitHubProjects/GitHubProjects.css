@@ -1,0 +1,134 @@
+.github-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5em;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.github-project {
+  padding: 1.5em;
+  text-align: center;
+  background-color: var(--clr-bg-alt);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.github-project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.github-project__name {
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+  word-break: break-word;
+}
+
+.github-project__description {
+  font-size: 0.9rem;
+  color: var(--clr-fg-alt);
+  margin-bottom: 1em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.github-project__meta {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+  font-size: 0.85rem;
+}
+
+.github-project__language {
+  background-color: var(--clr-primary);
+  color: white;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.github-project__stars {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  color: var(--clr-fg-alt);
+}
+
+.github-project__links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.github-projects__loading,
+.github-projects__error {
+  text-align: center;
+  color: var(--clr-fg-alt);
+  padding: 2em;
+}
+
+/* Pagination */
+.github-projects__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.pagination__pages {
+  display: flex;
+  gap: 0.5em;
+}
+
+.pagination__page {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--clr-bg-alt);
+  color: var(--clr-fg);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.pagination__page:hover {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.pagination__page--active {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.pagination__btn {
+  background-color: var(--clr-bg-alt);
+  border-radius: 50%;
+}
+
+.pagination__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .github-projects__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pagination__pages {
+    gap: 0.3em;
+  }
+  
+  .pagination__page {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+}

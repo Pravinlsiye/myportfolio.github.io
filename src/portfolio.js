@@ -10,7 +10,7 @@ const about = {
   role: 'Developer',
   description:
     'Self-motivated,highly passionate about technology and a hardworking fresherlooking for an opportunity to work ina organization to utilize my skills and knowledge to work for growth of the organization.',
-  resume: "https://pravinresume.s3.us-west-2.amazonaws.com/Pravin+Resume.pdf",
+  resume: "https://docs.google.com/document/d/1q7D-t9NZXDmrkcWYWXG4BEooVml7Q6J30AFfBODQMN8/export?format=pdf",
   social: {
     linkedin: 'https://www.linkedin.com/in/pravinsiye',
     github: 'https://github.com/Pravinlsiye',

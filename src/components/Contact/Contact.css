@@ -1,3 +1,16 @@
 .contact {
   flex-direction: column;
 }
+
+.contact__buttons {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact__email {
+  margin-top: 1em;
+  font-size: 0.9rem;
+  color: var(--clr-fg-alt);
+}

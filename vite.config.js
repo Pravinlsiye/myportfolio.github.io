@@ -7,5 +7,8 @@ export default defineConfig(({ command }) => ({
   build: {
     outDir: 'dist',
   },
+  define: {
+    __DEPLOY_DATE__: JSON.stringify(new Date().toISOString().split('T')[0]),
+  },
 }))
 
