@@ -1,5 +1,5 @@
-import { projects } from '../../portfolio'
-import ProjectContainer from '../ProjectContainer/ProjectContainer'
+import { projects } from '../../portfolio.js'
+import ProjectContainer from '../ProjectContainer/ProjectContainer.jsx'
 import './Projects.css'
 
 const Projects = () => {
@@ -19,3 +19,4 @@ const Projects = () => {
 }
 
 export default Projects
+

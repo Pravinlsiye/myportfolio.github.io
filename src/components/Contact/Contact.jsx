@@ -1,4 +1,4 @@
-import { contact } from '../../portfolio'
+import { contact } from '../../portfolio.js'
 import './Contact.css'
 
 const Contact = () => {
@@ -13,8 +13,8 @@ const Contact = () => {
         </span>
       </a>
     </section>
-    
   )
 }
 
 export default Contact
+

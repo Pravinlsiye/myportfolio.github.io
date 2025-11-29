@@ -1,20 +1,15 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Runs on pushes to main branch
   push:
     branches: ["main"]
-  
-  # Allows manual trigger from Actions tab
   workflow_dispatch:
 
-# Sets permissions for GITHUB_TOKEN
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one deployment at a time
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -38,8 +33,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          CI: false
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -47,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./build"
+          path: "./dist"
 
   deploy:
     environment:
@@ -60,4 +53,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

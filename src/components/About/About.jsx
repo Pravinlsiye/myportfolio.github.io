@@ -1,6 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import { about } from '../../portfolio'
+import { about } from '../../portfolio.js'
 import './About.css'
 
 const About = () => {
@@ -55,3 +55,4 @@ const About = () => {
 }
 
 export default About
+

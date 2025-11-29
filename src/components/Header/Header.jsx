@@ -1,5 +1,5 @@
-import { header } from '../../portfolio'
-import Navbar from '../Navbar/Navbar'
+import { header } from '../../portfolio.js'
+import Navbar from '../Navbar/Navbar.jsx'
 import './Header.css'
 
 const Header = () => {
@@ -22,3 +22,4 @@ const Header = () => {
 }
 
 export default Header
+

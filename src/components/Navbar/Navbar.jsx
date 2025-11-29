@@ -3,8 +3,8 @@ import Brightness2Icon from '@mui/icons-material/Brightness2'
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
-import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact } from '../../portfolio'
+import { ThemeContext } from '../../contexts/theme.jsx'
+import { projects, skills, contact } from '../../portfolio.js'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -78,3 +78,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

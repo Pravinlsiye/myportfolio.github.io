@@ -1,4 +1,4 @@
-import { skills } from '../../portfolio'
+import { skills } from '../../portfolio.js'
 import './Skills.css'
 
 const Skills = () => {
@@ -19,3 +19,4 @@ const Skills = () => {
 }
 
 export default Skills
+

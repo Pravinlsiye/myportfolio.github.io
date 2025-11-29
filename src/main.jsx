@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
-import App from './App'
-import { ThemeProvider } from './contexts/theme'
+import App from './App.jsx'
+import { ThemeProvider } from './contexts/theme.jsx'
 import './index.css'
 
 const container = document.getElementById('root')
@@ -11,3 +11,4 @@ root.render(
     <App />
   </ThemeProvider>
 )
+
