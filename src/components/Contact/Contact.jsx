@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import PhoneIcon from '@mui/icons-material/Phone'
+import EmailIcon from '@mui/icons-material/Email'
 import { contact } from '../../portfolio.js'
 import './Contact.css'
 
@@ -16,6 +19,28 @@ const Contact = () => {
   return (
     <section className='section contact center' id='contact'>
       <h2 className='section__title'>Contact</h2>
+      
+      <div className='contact__info'>
+        {contact.location && (
+          <div className='contact__item'>
+            <LocationOnIcon />
+            <span>{contact.location}</span>
+          </div>
+        )}
+        {contact.phone && (
+          <div className='contact__item'>
+            <PhoneIcon />
+            <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+          </div>
+        )}
+        {contact.email && (
+          <div className='contact__item'>
+            <EmailIcon />
+            <span>{contact.email}</span>
+          </div>
+        )}
+      </div>
+
       <div className='contact__buttons'>
         <a 
           href={`mailto:${contact.email}`}
@@ -30,7 +55,6 @@ const Contact = () => {
           {copied ? 'Copied!' : 'Copy Email'}
         </button>
       </div>
-      <p className='contact__email'>{contact.email}</p>
     </section>
   )
 }

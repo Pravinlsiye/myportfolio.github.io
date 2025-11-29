@@ -1,74 +1,117 @@
 const header = {
-  // all the properties are optional - can be left empty or deleted
   homepage: 'https://github.com/Pravinlsiye',
   title: 'Pravin.L',
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
-  name: 'Pravin L',
-  role: 'Developer',
+  name: 'Pravin Loganathan',
+  role: 'Software Developer',
   description:
-    'Self-motivated,highly passionate about technology and a hardworking fresherlooking for an opportunity to work ina organization to utilize my skills and knowledge to work for growth of the organization.',
-  resume: "https://docs.google.com/document/d/1q7D-t9NZXDmrkcWYWXG4BEooVml7Q6J30AFfBODQMN8/export?format=pdf",
+    'Software Developer with 3+ years of experience at Trimble Inc, specializing in full-stack development, cloud-native solutions, and hardware-software integration. Expertise in building scalable SaaS APIs, microservices architecture, and Kubernetes infrastructure. Passionate about optimizing performance and delivering impactful solutions.',
+  resume: 'https://docs.google.com/document/d/1q7D-t9NZXDmrkcWYWXG4BEooVml7Q6J30AFfBODQMN8/export?format=pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/pravinsiye',
     github: 'https://github.com/Pravinlsiye',
-    // Instagram: 'https://www.instagram.com/mr_siye/'
   },
 }
 
-const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
+const experience = [
   {
-    name: 'Simple Portfolio ',
-    description:
-      "A Simple Portfolio made with HTML and Css .It's a single page portfolio which contain all the major info that are requried ",
-    stack: ['HTML', 'CSS'],
-    sourceCode: 'https://github.com/Pravinlsiye/Simple-portfolio',
-    livePreview: 'https://pravinlsimpleportfolio.netlify.app/',
+    company: 'Trimble Inc',
+    role: 'Software Developer',
+    duration: 'Jan 2023 - Present',
+    location: 'Chennai, India',
+    highlights: [
+      'Engineered software solutions for seamless hardware integration with scanners and total stations',
+      'Developed full-stack SaaS API services with real-time monitoring and database optimizations',
+      'Set up Azure Kubernetes infrastructure, reducing operational costs by 30%',
+      'Implemented Report Previewer, reducing annual costs by ₹5,00,000',
+      'Designed microservices for real-time data synchronization, doubling API performance',
+    ],
   },
   {
-    name: 'E-commerce Website',
-    description:
-      'E-commerce website for Sakthi Murgan Traders.A website contain all basic needs of Sathi Murgan Traders',
-    stack: ['EJS', 'JavaScript', 'CSS'],
-    sourceCode: 'https://github.com/Pravinlsiye/Smt-website.git',
-    livePreview: 'https://github.com/Pravinlsiye/Smt-website.git',
-  },
-  {
-    name: 'Website Status Checker',
-    description:
-      'Website Status checker is project which check the current status of website whether the website is Online or Offline',
-    stack: ['Python', 'Aiohttp'],
-    sourceCode: 'https://github.com/Pravinlsiye/web-status-checks',
-   // livePreview: 'https://github.com',
+    company: 'Intersect IQ',
+    role: 'Project Trainee',
+    duration: 'Jan 2022 - Apr 2022',
+    location: 'Bengaluru, India',
+    highlights: [
+      'Contributed to 10+ cobble detection case studies using data analysis',
+      'Developed algorithms resulting in 75% reduction in accidents',
+    ],
   },
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
+  // Languages
+  'C#',
+  'C++',
   'Java',
   'Python',
-  'c',
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'Sql',
+  'SQL',
+  'TypeScript',
+  
+  // Frameworks
+  '.NET',
+  'ASP.NET Core',
   'React',
-  'Linux',
-  'Iot',
-  'Git',
-  'Docker',
+  'Angular',
+  
+  // Cloud & DevOps
   'Azure',
   'AWS',
+  'Kubernetes',
+  'Docker',
+  'CI/CD',
+  'Git',
+  
+  // Architecture
+  'Microservices',
+  'REST APIs',
+  'SaaS',
+  
+  // Tools & Monitoring
+  'Prometheus',
+  'Redis',
+  'GeoJSON',
+  'Linux',
+]
+
+const certifications = [
+  {
+    name: 'Microsoft Certified: Azure Fundamentals',
+    code: 'AZ-900',
+    link: 'https://learn.microsoft.com/en-us/users/pravinl/credentials/8097ab77ca5cd216',
+  },
+]
+
+const publications = [
+  {
+    title: 'Auto Scaling Infrastructure with Monitoring Tools using Linux Server on Cloud',
+    publisher: 'IEEE',
+    year: '2023',
+    link: 'https://ieeexplore.ieee.org/document/10083635',
+  },
+]
+
+const education = [
+  {
+    degree: 'Bachelor of Computer Science and Engineering',
+    school: 'Kongu Engineering College',
+    location: 'Erode, Tamil Nadu',
+    duration: 'Sep 2020 - July 2023',
+  },
+  {
+    degree: 'Diploma in Electrical and Electronics Engineering',
+    school: 'Kongu Polytechnic College',
+    location: 'Erode, Tamil Nadu',
+    duration: 'Aug 2018 - Aug 2020',
+  },
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'pravin270320@gmail.com',
+  phone: '+91 8870698224',
+  location: 'Erode, Tamil Nadu, India',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, experience, skills, certifications, publications, education, contact }

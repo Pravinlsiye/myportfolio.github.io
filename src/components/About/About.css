@@ -9,11 +9,29 @@
 
 .about__role {
   margin-top: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  background: var(--clr-primary);
+  color: white;
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .about__desc {
   font-size: 1rem;
   max-width: 600px;
+  line-height: 1.7;
 }
 
 .about__desc,
@@ -33,5 +51,9 @@
   .app .about {
     align-items: flex-start;
     margin-top: 2em;
+  }
+
+  .about__role {
+    justify-content: flex-start;
   }
 }

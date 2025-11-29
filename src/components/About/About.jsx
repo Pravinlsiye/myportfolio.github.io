@@ -1,5 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import VerifiedIcon from '@mui/icons-material/Verified'
 import { about } from '../../portfolio.js'
 import './About.css'
 
@@ -14,7 +15,14 @@ const About = () => {
         </h1>
       )}
 
-      {role && <h2 className='about__role'>A {role}.</h2>}
+      {role && (
+        <h2 className='about__role'>
+          {role}
+          <span className='about__badge'>
+            <VerifiedIcon fontSize='small' /> 3+ Years
+          </span>
+        </h2>
+      )}
       <p className='about__desc'>{description && description}</p>
 
       <div className='about__contact center'>
@@ -33,6 +41,8 @@ const About = () => {
                 href={social.github}
                 aria-label='github'
                 className='link link--icon'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <GitHubIcon />
               </a>
@@ -43,6 +53,8 @@ const About = () => {
                 href={social.linkedin}
                 aria-label='linkedin'
                 className='link link--icon'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <LinkedInIcon />
               </a>
@@ -55,4 +67,3 @@ const About = () => {
 }
 
 export default About
-

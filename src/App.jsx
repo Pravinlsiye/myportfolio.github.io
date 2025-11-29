@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme.jsx'
 import Header from './components/Header/Header.jsx'
 import About from './components/About/About.jsx'
+import Experience from './components/Experience/Experience.jsx'
 import GitHubProjects from './components/GitHubProjects/GitHubProjects.jsx'
 import Skills from './components/Skills/Skills.jsx'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
@@ -18,6 +19,7 @@ const App = () => {
 
       <main>
         <About />
+        <Experience />
         <GitHubProjects />
         <Skills />
         <Contact />

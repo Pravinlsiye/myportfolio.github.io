@@ -2,6 +2,35 @@
   flex-direction: column;
 }
 
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--clr-fg-alt);
+  font-size: 0.95rem;
+}
+
+.contact__item a {
+  color: var(--clr-fg-alt);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact__item a:hover {
+  color: var(--clr-primary);
+}
+
+.contact__item svg {
+  color: var(--clr-primary);
+}
+
 .contact__buttons {
   display: flex;
   gap: 1em;
@@ -9,8 +38,8 @@
   justify-content: center;
 }
 
-.contact__email {
-  margin-top: 1em;
-  font-size: 0.9rem;
-  color: var(--clr-fg-alt);
+@media (max-width: 600px) {
+  .contact__info {
+    align-items: flex-start;
+  }
 }

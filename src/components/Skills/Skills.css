@@ -1,12 +1,159 @@
 .skills__list {
-  max-width: 450px;
+  max-width: 650px;
   width: 95%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.8em;
 }
 
 .skills__list-item {
-  margin: 0.5em;
+  font-size: 0.9rem;
+  padding: 0.5em 1.2em;
+  transition: all 0.2s ease;
+}
+
+.skills__list-item:hover {
+  transform: translateY(-2px);
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.skills__certifications,
+.skills__publications {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.skills__subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+  color: var(--clr-fg);
+}
+
+.skills__cert-list,
+.skills__pub-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.skills__cert {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--clr-bg-alt);
+  padding: 0.8em 1.2em;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--clr-fg);
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.skills__cert:hover {
+  border-color: var(--clr-primary);
+  transform: translateY(-2px);
+}
+
+.skills__cert svg {
+  color: #0078d4;
+  font-size: 1.2rem;
+}
+
+.skills__cert-code {
+  background: var(--clr-primary);
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.skills__cert-link {
+  font-size: 1rem !important;
+  color: var(--clr-fg-alt) !important;
+  opacity: 0.5;
+}
+
+.skills__cert:hover .skills__cert-link {
+  opacity: 1;
+  color: var(--clr-primary) !important;
+}
+
+/* Publications */
+.skills__pub {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background: var(--clr-bg-alt);
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--clr-fg);
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  max-width: 600px;
+  text-align: left;
+}
+
+.skills__pub:hover {
+  border-color: var(--clr-primary);
+  transform: translateY(-2px);
+}
+
+.skills__pub > svg:first-child {
+  color: #e74c3c;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.skills__pub-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  flex: 1;
+}
+
+.skills__pub-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.skills__pub-meta {
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.skills__pub-link {
+  font-size: 1.2rem !important;
+  color: var(--clr-fg-alt) !important;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.skills__pub:hover .skills__pub-link {
+  opacity: 1;
+  color: var(--clr-primary) !important;
+}
+
+@media (max-width: 600px) {
+  .skills__cert {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .skills__pub {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills__pub-info {
+    align-items: center;
+  }
 }
