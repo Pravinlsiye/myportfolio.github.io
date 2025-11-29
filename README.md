@@ -2,20 +2,21 @@
 
 A clean, modern portfolio website built with React 18 and MUI v6.
 
-**Demo:** https://pravinl.netlify.app/
+**Live Demo:** https://Pravinlsiye.github.io/myportfolio.github.io
 
 ## Tech Stack
 
 - React 18
 - MUI (Material-UI) v6
 - CSS3
+- GitHub Actions (CI/CD)
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js 18+ (recommended: Node 20)
-- npm or yarn
+- npm
 
 ### Installation
 
@@ -37,27 +38,30 @@ npm run build
 
 ## Deployment
 
-### Netlify (Recommended)
+### Automatic Deployment (GitHub Actions)
 
-This project is configured for automatic deployment on Netlify.
+This project uses GitHub Actions for automatic deployment. Every push to the `main` branch triggers:
 
-1. Push your code to GitHub
-2. Connect your repository to Netlify
-3. Netlify will automatically detect the build settings from `netlify.toml`
-4. Deploy!
+1. Install dependencies
+2. Build production version
+3. Deploy to GitHub Pages
 
-**Build settings (auto-detected):**
-- Build command: `npm run build`
-- Publish directory: `build`
-- Node version: 20
+**No manual deployment needed!** Just push your code.
 
-### Manual Deployment
+### First-time Setup on GitHub
+
+1. Go to your repo **Settings** → **Pages**
+2. Under **Build and deployment**:
+   - **Source:** GitHub Actions
+3. Push to `main` branch - deployment will start automatically
+
+### Manual Deployment (Optional)
+
+If you prefer manual deployment:
 
 ```shell
-npm run build
+npm run deploy
 ```
-
-The `build` folder will contain production-ready files.
 
 ## Customization
 
