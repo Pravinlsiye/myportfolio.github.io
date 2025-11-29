@@ -2,7 +2,7 @@
 
 A clean, modern portfolio website built with React 18 and MUI v6.
 
-**Live Demo:** https://Pravinlsiye.github.io/myportfolio.github.io
+**Live Demo:** https://Pravinlsiye.github.io/myportfolio
 
 ## Tech Stack
 
